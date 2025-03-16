@@ -1,0 +1,28 @@
+{
+    "nextPaletteID": 1,
+    "palettes": {
+        "custom0": {
+            "id": "custom0",
+            "name": "Junicoders",
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#8DC64D",
+                "#A5DCEC",
+                "#D1A380",
+                "#222034",
+                "#B399ED",
+                "#FF5260",
+                "#F2EA80",
+                "#FFDBF4",
+                "#723923",
+                "#EFA54D",
+                "#8BECEA",
+                "#FFEAD7",
+                "#EE95B1",
+                "#73A63A"
+            ],
+            "custom": true
+        }
+    }
+}

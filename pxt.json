@@ -1,0 +1,50 @@
+{
+    "name": "EasterTech_V2",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.12.61",
+        "tag": "v1.12.61",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/ca55e606e8e9dc22645e01ace221016fe52ca101",
+        "target": "1.12.61",
+        "pxt": "8.5.71",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj",
+    "palette": [
+        "#000000",
+        "#FFFFFF",
+        "#8DC64D",
+        "#A5DCEC",
+        "#D1A380",
+        "#222034",
+        "#B399ED",
+        "#FF5260",
+        "#F2EA80",
+        "#FFDBF4",
+        "#723923",
+        "#EFA54D",
+        "#8BECEA",
+        "#FFEAD7",
+        "#EE95B1",
+        "#73A63A"
+    ]
+}
