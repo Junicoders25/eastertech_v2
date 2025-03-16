@@ -22,6 +22,7 @@ controller.A.onEvent(ControllerButtonEvent.Released, function () {
         mySprite5 = sprites.create(assets.image`Ovo Partido`, SpriteKind.Enemy)
         mySprite5.setPosition(randint(0, scene.screenWidth()), 0)
         mySprite5.setVelocity(0, 34)
+        mySprite5.startEffect(effects.spray, 100)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
@@ -30,7 +31,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     music.play(music.createSoundEffect(WaveShape.Sine, 200, 600, 255, 0, 150, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    sprites.destroy(otherSprite, effects.disintegrate, 100)
+    sprites.destroy(otherSprite, effects.warmRadial, 100)
     info.changeLifeBy(-1)
     music.play(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
 })
@@ -38,7 +39,9 @@ let mySprite5: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundColor(5)
+effects.confetti.startScreenEffect(1000)
 game.splash("Carrega no botão A para iniciar")
 game.setGameOverMessage(false, "FIM DO JOGO")
 music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
 game.setGameOverScoringType(game.ScoringType.HighScore)
+game.setGameOverPlayable(false, music.melodyPlayable(music.powerUp), false)
